@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active hr{
+    @apply block
+}
+
+::-webkit-scrollbar{
+  @apply hidden
+}
+*{
+  font-family: Outfit;
+}
+
+@media(max-width:740px){
+  .active li{
+    @apply text-white bg-primary rounded-lg px-3 py-1
+  }
+}
