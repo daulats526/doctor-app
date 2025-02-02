@@ -113,13 +113,7 @@ const updateUserProfile = async (req, res) => {
         const { userId, name, phone, address, dob, gender, email, password } = req.body;
         const imageFile = req.files?.image;
 
-        // Validate required fields
-        // if (!userId || !name || !phone || !address || !dob || !gender) {
-        //     return res.status(400).json({
-        //         message: "Please provide all required fields.",
-        //         success: false,
-        //     });
-        // }
+       
 
         // Find user by ID
         const user = await User.findById(userId);

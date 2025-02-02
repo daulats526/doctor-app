@@ -35,7 +35,9 @@ const Navbar = () => {
             <li className='py-1'>Contact</li>
             <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden'/>
         </NavLink>
+        <a href="https://doctor-app-six.vercel.app/" className='text-sm rounded-lg border border-primary py-1 px-3'>admin panal</a>
       </ul>
+      
       <div className='flex items-center gap-5 '>
         {
             token ? <div className='flex items-center gap-2 cursor-pointer group relative '>
@@ -65,7 +67,11 @@ const Navbar = () => {
           <NavLink className="px-4 py-2 rounded inline-block" onClick={()=>setShoeMenu(false)} to={'/doctors'}><li>Doctors</li></NavLink>
           <NavLink className="px-4 py-2 rounded inline-block" onClick={()=>setShoeMenu(false)} to={'/about'}><li>About</li></NavLink>
           <NavLink className="px-4 py-2 rounded inline-block" onClick={()=>setShoeMenu(false)} to={'/contact'}><li>Contact</li></NavLink>
+          <a href="https://doctor-app-six.vercel.app/" className='text-sm rounded-lg border border-primary px-4 py-2  inline-block'>admin panal</a>
+          <button onClick={()=>navigate('/login')} className='bg-primary text-white px-8 py-3 rounded-full font-light hidden md:block '>Create Account</button>
+          
         </ul>
+       
        </div>
       </div>
     </div>
