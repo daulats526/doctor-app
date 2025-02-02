@@ -1,5 +1,5 @@
 import doctorModel from '../models/doctorModel.js';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import { uploadImageToCloudinary } from '../middlewares/uploadImage.js';
 import jwt from 'jsonwebtoken'
 import Appointment from '../models/appointmentModel.js'
